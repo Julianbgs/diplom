@@ -1,0 +1,221 @@
+img {
+    max-width: 100%;
+}
+.news-img-f {
+    display:flex;
+    font-family: "Bold";
+    font-style:italic;
+    text-align:right;
+}
+.news-img-f div:first-child {
+    flex:0 0 44%;
+    margin-left:-13%;
+}
+.news-img-f div:last-child {
+    flex:0 0 69%;
+}
+.news-img-f_noleft div:first-child {
+    flex:0 0 33%;
+    margin-left: 0;
+}
+.news-img-f_noleft div:first-child img {
+    max-width: 110%;
+    width: 110%;
+}
+.news-img-f_noleft div:last-child {
+    flex:0 0 67%;
+}
+.news-img-f_noleft2 div:first-child {
+    flex:0 0 36%;
+    margin-left: 0;
+}
+.news-img-f_noleft2 div:first-child img {
+    max-width: 100%;
+    width: 100%;
+}
+.news-img-f_noleft2 div:last-child {
+    flex:0 0 64%;
+}
+.news-img-f_right div:first-child {
+    flex:0 0 62%;
+    margin-left:0;
+    text-align: left;
+}
+.news-img-f_right div:last-child {
+    flex:0 0 44%;
+    margin-right:-6%;
+}
+.news-img-f_right-no,
+.news-img-f_no-bld {
+    font-family: "Semibold";
+}
+.news-img-f_right-no span,
+.news-img-f_no-bld span {
+    font-style: normal;
+}
+.news-img-f_aligncenter {
+    align-items: center;
+}
+.news-img-f_alignend {
+    align-items: flex-end;
+}
+.topchik {
+    /* margin-top: -4vw; */
+    margin-top: 10px;
+}
+.topchik div:last-child {
+    padding-right: 8vw;
+    padding-bottom: 3vw;
+}
+.topchik div:first-child {
+    margin-left: -5%;
+}
+.topchik2 div:first-child {
+    padding-top: 2vw;
+}
+.news-img-f_big div:first-child {
+    margin-left: 0;
+    flex: 0 0 50%;
+}
+.news-img-f_big div:last-child {
+    flex: 0 0 50%;
+}
+.news-img-f_rno div:last-child {
+    flex: 0 0 56%;
+}
+.news-img-f_rno div:first-child {
+    flex: 0 0 50%;
+    padding-right: 10px;
+    font-family: "Regular";
+    font-style: normal;
+}
+.news-img-f img {
+    width:100%;
+    margin-right:10px;
+}
+.article-t::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 9px;
+    background-color: #096000;
+}
+.img-liest {
+    position: relative;
+}
+.img-liest img {
+    width: 100%;
+}
+.img-liest::after {
+    content: "";
+    position: absolute;
+    bottom: -2vw;
+    right: -7vw;
+    width: 20.261vw;
+    height: 13.334vw;
+    background: url(/files/img/least.png) center center no-repeat;
+    background-size: contain;
+}
+
+.main-ab {
+    display: flex;
+    margin: 30px 0 10px;
+}
+.main-ab img {
+    margin-left: 20px;
+}
+.main-ab__t {
+    position:relative;
+    position: relative;
+    padding-bottom: 21px;
+    font-family: "Bold";
+    font-size: calc(12px + 0.8vw);
+    line-height: calc(17px + 0.9vw);
+}
+.main-ab__t::before {
+    width: 100%;
+}
+.main-ab__t::after {
+    left: initial;
+    right: 0;
+}
+.main-ab__tx {
+    margin-top: 10px;
+}
+.main-ab__cell:first-child {
+    flex: 0 0 70%;
+}
+.main-ab__cell:last-child {
+    flex: 0 0 30%;
+}
+.main-ab_redi .main-ab__cell:first-child {
+    flex: 0 0 30%;
+}
+.main-ab_redi .main-ab__cell:last-child {
+    flex: 0 0 70%;
+    padding-left:20px;
+}
+.main-ab_redi img {
+    margin-left:0;
+}
+.main-ab_redi .main-ab__t {
+    text-align:right;
+}
+.main-ab_redi .main-ab__t::before {
+    left:inherit;
+    right:0;
+}
+.main-ab_redi .main-ab__t::after {
+    left:inherit;
+    right:60%;
+}
+.main-ab_redi .main-ab__tx {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .main-ab {
+        flex-direction: column;
+    }
+    .main-ab img {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+.picture-with-bord > div:first-child {
+    position:relative;
+    text-align:left;
+}
+.picture-with-bord > div:first-child::before {
+    content:"";
+    position:absolute;
+    bottom:10%;
+    right: 0;
+    height: 0.4vw;
+    width: 65%;
+    background-color:#fc0001;
+}
+.picture-with-bord > div:first-child img {
+    width:90%;
+}
+
+.spr-bl {
+    margin-top: calc(50vw / 19.2);
+}
+.spr-bl__t {
+    font-family: "Bold";
+    font-size: calc(23.51vw / 19.2);
+    line-height: calc(31.21vw / 19.2);
+    color: #046449;
+    border-bottom: 2px solid #046449;
+}
+.spr-bl__tx {
+    margin-top: calc(20vw / 19.2);
+    padding-left: calc(365vw / 19.2);
+    text-align: justify;
+    font-size: calc(20.15vw / 19.2);
+    line-height: calc(35.26vw / 19.2);
+}
